@@ -12,11 +12,16 @@
     "package"
   ],
   "license": "ISC",
-  "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
   "scripts": {
     "start": "ts-node src",
-    "build:dev": "rimraf dist && tsc --p tsconfig.json",
-    "build": "rimraf dist && tsc --p tsconfig.prod.json",
+    "prebuild:dev": "rimraf dist",
+    "build:dev": "tsc --p tsconfig.json",
+    "prebuild": "rimraf dist",
+    "build": "tsc --p tsconfig.prod.json",
     "test": "jest"
   },
   "dependencies": {
@@ -26,9 +31,7 @@
   },
   "devDependencies": {
     "@types/axios": "0.14.0",
-    "@types/jest": "24.0.23",
     "@types/node": "12.11.1",
-    "jest": "24.9.0",
     "rimraf": "3.0.0",
     "ts-jest": "24.2.0",
     "ts-node": "8.4.1",
