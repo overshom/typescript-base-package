@@ -9,6 +9,5 @@
 Just install packages and you are ready to go.
 
 ```sh
-yarn add @types/jest
-yarn add jest
+yarn add jest @types/jest --dev
 ```
