@@ -25,12 +25,11 @@
     "test": "jest"
   },
   "dependencies": {
-    "axios": "0.21.1",
+    "axios": "0.24.0",
     "overshom-valid": "1.0.0",
     "overshom-utils": "1.0.7"
   },
   "devDependencies": {
-    "@types/axios": "0.14.0",
     "@types/node": "12.11.1",
     "rimraf": "3.0.0",
     "ts-jest": "24.2.0",
